@@ -7,14 +7,18 @@
     <title> Zain Qurashi </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Sans:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
     <div class="outer">
     <div class="bar">
+        <section class="hidden">
         <div class="box">
             <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
            <!--Nav bar--> 
@@ -35,6 +39,7 @@
         <!--Main page-->
         <h2 class="name">Zain Qurashi</h2>
         <p class="name2">Software Development Student</p>
+        
         <div class="social">
             <a href="https://www.linkedin.com/in/zain-qurashi-02a8041b2/"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/Zainnn15"><i class='bx bxl-github' ></i></a>
@@ -43,28 +48,33 @@
         </div>
        
     </div>
-    
+</section>
 </div>
 <!--About me-->
 <div class="box2">
-    <h3 id="box2">About me</h3> 
-    <h2>Software Developement student at Seneca College</h2>  
+    <section class="hidden">
+    <h3 id="box2" class="name4">About me</h3> 
+    <h2 class="name4">Software Developement student at Seneca College</h2>  
    <p class="name3">Hi, my name is Zain Qurashi and I love to seek <br> chances to grow and gain experience through projects, and more <br> importantly, enjoy it.</p>
    <br>
    <p class="name3">I enjoy exploring new programming languages, frameworks, <br> softwares, and have myself engaged with personal <br> projects and hackatons.</p>
    <br>
    <p class="name3">My experince and innovative thinking of software principles <br> can be invested to the development of useful technology <br> that can help millions.</p>
-   <a href="#" class="btn">
+   <a href="Zain Qurashi's Resume.pdf" target="_blank" class="btn">
     Download Resume
     <i class='bx bx-download'></i>
     </a>
+    <div class="image">
+    <img src="DSC00925.png" >
+    </div>
+</section>
    </div>
 
 
     <!--Education-->
     <div class="box3">
-        
-        <h3 id="Ed">Education</h3>    
+        <section class="hidden">
+        <h3 id="Ed" class="name12">Education</h3>    
         <div class="box4">
             <img src="https://i.imgur.com/eCIBMMo.png" class="seneca">
             <p class="name5"><b>Program:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Software Development</p>
@@ -73,12 +83,13 @@
             
 
         </div>
+    </section>
     </div>
 
 
 
    <!--Skills-->
-     <h3 id="skill">Skills</h3>
+     <h3 id="skill" class="name13">Skills</h3>
 <div class="skillbox1">
 <h1 class="tit">Operating systems</h1>
 <nav class="pean">
@@ -143,51 +154,98 @@
         </nav>
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
     <div class="box3">
-        <h3 id="Pro">Projects</h3>  
+        <section>
+        <h3 id="Pro" class="name14">Projects</h3>  
 
         <div class="portfolio-content">
-            <div class="portfolio-box"> 
+            <div class="portfolio-box" data-aos="fade-right"> 
                     <img src="https://i.imgur.com/DdEtsx2.png" class="portfolio-image">
+                    
                 <div class="portfolio-overlay">
-                    <h3>StraySafe</h3>
-                    <a href="https://devpost.com/software/straysafe">Learn more <i class='bx bx-link'></i></a>
+                    <a href="https://devpost.com/software/straysafe"><h3 class="name6">StraySafe</h3></a>
             </div>
         </div>
-        <div class="portfolio-box"> 
+        <div class="portfolio-box" data-aos="zoom-in"> 
             <img src="https://i.imgur.com/tPtJKkF.png" class="portfolio-image">
+            
         <div class="portfolio-overlay">
-            <h3>Megalodon</h3>
-            <a href="https://devpost.com/software/megalodon">Learn more <i class='bx bx-link'></i></a>
+            <a href="https://devpost.com/software/megalodon"> <h3 class="name6">Megalodon</h3></a>
         </div>
         </div>
-    <div class="portfolio-box"> 
+    <div class="portfolio-box" data-aos="fade-left"> 
         <img src="https://i.imgur.com/4AvHiDh.png" class="portfolio-image">
         <div class="portfolio-overlay">
-        <h3>Discord Wordle bot</h3>
-        <a href="https://devpost.com/software/wordle-bot-hre649">Learn more <i class='bx bx-link'></i></a>
+        <a href="https://devpost.com/software/wordle-bot-hre649"><h3 class="name6">Discord Wordle bot</h3></a>
+        
         </div>
         </div>
 
         </div>
+    </section>
     </div>
 
 
     <div class="box3">
         
-        <h3 id="Cert">Certifications</h3>    
+        <h3 id="Cert">Certifications</h3> 
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="https://i.imgur.com/LLQfVOV.jpg" class="img1">
+            </div>
+          
+            <div class="mySlides fade">
+              <img  src="https://i.imgur.com/4Me4Ig7.jpg" class="img1">
+            </div>
+        
+            <div class="mySlides fade">
+              <img  src="cerf.png" class="img1">
+              
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+
+
+        </div> 
+
+
+
+        <!--<h3 id="Cert">Certifications</h3>    
         <div class="picside">
-        <div class="img1">
-        <img src="https://i.imgur.com/LLQfVOV.jpg" width="700" height="541">
+        
+        <div class="img1" data-aos="fade-down-left">
+        <img src="https://i.imgur.com/LLQfVOV.jpg" width="650" height="521">
         </div>
-        <div>
-        <img class="img2" src="https://i.imgur.com/4Me4Ig7.jpg">
+        <div class="img2" data-aos="fade-down-right">
+        <img  src="https://i.imgur.com/4Me4Ig7.jpg" width="650" height="521">
         </div>
+        <div class="img1" data-aos="fade-down-right">
+            <img  src="cerf.png" width="650" height="521">
+            </div>
         </div>
-    </div>
+    -->
+
+    <script>
+        AOS.init();
+    </script>
 
 
 
@@ -235,15 +293,11 @@
                 <a href="https://devpost.com/zainnn15-q?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><i class='bx bxl-dev-to'></i></i></a>
                 
             </div>
-            <p>© 2021 Zain Qurashi</p>
+            <p class="feet">© 2021 Zain Qurashi</p>
         </div>
 
     </div>
 
-
-
 </div>
-
-<script src="main.js"></script>
 </body>
 </html>

@@ -29,7 +29,14 @@ nav {
     font-weight: 700;
     color: #fff;
 
-}
+  }
+
+  section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+  }
 
 .scroll-top{
   position: fixed;
@@ -79,8 +86,40 @@ nav ul li .navh{
     background-position-x: left;
   }
 
+  .hidden {
+    opacity: 0;
+    transition: all 2s;
+  }
+
+  .hidden2 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  .image{
+    width: 100px;
+    display: inline-flex;
+  }
+.image img{
+  margin: auto 500px;
+  float: top;
+  width: 402px;
+  height: 568px;
+  position: absolute;
+  top: -520px;
+}
+
+
   .box {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     padding: 10px;
     border: 2px;
@@ -96,7 +135,7 @@ nav ul li .navh{
   }
 
   .name {
-    font-size: 70px;
+    font-size: 100px;
     color: #fff;
     text-align: center;
     padding: 200px;
@@ -116,13 +155,26 @@ nav ul li .navh{
   --_p: 30%;
 }
   .name2 {
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
     position: relative;
-    bottom: 20%;
+    bottom: 15%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
+  }
+  .name14{
+    position: relative;
+    top: -190px;
+    font-size: 100px;
+  }
+  .name13{
+    font-size: 80px;
+  }
+  .name12{
+    position: relative;
+    top: -80px;
+    font-size: 80px;
   }
 
   .social {
@@ -132,6 +184,8 @@ nav ul li .navh{
     column-gap: 0.5rem;
  
   }
+
+
 
   .social .bx{
     font-size: 30px;
@@ -166,6 +220,15 @@ nav ul li .navh{
     text-align: justify;
     font-family: 'Roboto', sans-serif;
   }
+  .name6 {
+    width: 70%;
+    font-size: 50px;
+    color: rgb(37, 240, 189);
+    position: relative;
+    bottom: 30%;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+  }
 
   .portfolio-content {
     display: grid;
@@ -174,9 +237,10 @@ nav ul li .navh{
   }
   .portfolio-box {
     position: relative;
-    width: 80%;
+    width: 60%;
     height: 100%;
     overflow: hidden;
+    border-radius: 0.8rem;
   }
 
   .portfolio-overlay {
@@ -184,12 +248,24 @@ nav ul li .navh{
     top: 0;
     left: 0;
     width: 100%;
-    height: 30%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(224, 202, 189, 0.7);
+    opacity: 0;
+  }
+  .portfolio-overlay:hover {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: 0.3s all linear;
+  }
+  .bx-link {
+    width: 600px;
+    height: auto;
   }
 
   .btn{
@@ -213,6 +289,7 @@ nav ul li .navh{
   height: 90%;
   object-fit: cover;
   object-position: center;
+  display: block;
 }
 
   .sen{
@@ -232,7 +309,7 @@ nav ul li .navh{
     width: 100%;
     bottom: 15%;
     padding: 40px;
-    background: linear-gradient(180deg, rgba(74,74,74,1) 0%, rgba(56,56,56,1) 50%, rgba(46,46,46,1) 100%);
+    background: linear-gradient(180deg, rgb(58, 57, 57) 0%, rgba(56,56,56,1) 50%, rgb(58, 58, 58) 100%);
     border: 2px;
     margin: auto;
   }
@@ -302,7 +379,7 @@ nav ul li .navh{
     width: 100%;
     bottom: 15%;
     padding: 30px;
-    background: linear-gradient(180deg, rgba(74,74,74,1) 0%, rgba(56,56,56,1) 50%, rgba(46,46,46,1) 100%);
+    background: linear-gradient(180deg, rgba(74,74,74,1) 0%, rgb(75, 74, 74) 50%, rgb(68, 68, 68) 100%);
     border: 2px;
     margin: auto;
   }
@@ -310,22 +387,49 @@ nav ul li .navh{
     width: 60%;
     bottom: 15%;
     padding: 30px;
-    background: linear-gradient(180deg, rgba(74,74,74,1) 0%, rgba(56,56,56,1) 50%, rgba(46,46,46,1) 100%);
+    background: linear-gradient(180deg, rgb(51, 51, 51) 0%, rgb(48, 47, 47) 50%, rgb(48, 47, 47) 100%);
     border: 2px;
     margin: auto;
   }
 
   h3{
     font-size: 50px;
-    color: #ffc118;
+    color: #c45858;
     letter-spacing: 2px;
     text-align: center;
   }
+
+  .feet{
+    position: relative;
+    top: 30px;
+  }
+
+  .name4 {
+    font-size: 85px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    top: -150px;
+  }
+
+  .name4 h2 {
+    font-size: 35px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    top: -80px;
+  }
+
   .wend {
     font-size: 30px;
     color: #fff;
     letter-spacing: 2px;
     text-align: right;
+    
   }
   .wend2 {
     font-size: 20px;
@@ -358,8 +462,17 @@ nav ul li .navh{
   .picside{
     display: flex;
   }
-  .img1 { flex: 1.3344; }
-  .img2 { flex: 1.3345; }
+
+  .img1{
+    object-fit: cover;
+    object-position: center;
+  }
+  .img2{
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    right: -430px;
+  }
   
   
   .image__overlay {
@@ -410,15 +523,80 @@ nav ul li .navh{
     margin-top: 0.25em;
   }
 
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .img1{
+    width: 100%;
+    height: 90%;
+  }
+  
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 38px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
 
+/* Position the "next button" to the right */
+.next {
+  right: -35px;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: -35px;
+  border-radius: 3px 0 0 3px;
+}
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
+.active, .dot:hover {
+  background-color: #717171;
+}
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
-
-
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 
   .skillbox1 {
@@ -429,8 +607,8 @@ nav ul li .navh{
     background: linear-gradient(180deg, rgba(74,74,74,1) 0%, rgba(56,56,56,1) 50%, rgba(46,46,46,1) 100%);
     border: 2px;
 
-    --c: #1095c1; /* the color */
-  --b: .1em;    /* border length*/
+    --c: #8f8f8d; /* the color */
+  --b: .3em;    /* border length*/
   --d: 20px;    /* the cube depth */
   
   --_s: calc(var(--d) + var(--b));
@@ -472,14 +650,15 @@ nav ul li .navh{
 
 
 .skillbox2 {
+  position: relative;
   float: left;
     width: 48%;
     margin-left: 10px;
     padding: 30px;
     background: linear-gradient(180deg, rgba(74,74,74,1) 0%, rgba(56,56,56,1) 50%, rgba(46,46,46,1) 100%);
     border: 2px;
-    --c: #CC333F; /* the color */
-    --b: .1em;    /* border length*/
+    --c: #5f5d5e; /* the color */
+    --b: .3em;    /* border length*/
     --d: 20px;    /* the cube depth */
     
     --_s: calc(var(--d) + var(--b));
